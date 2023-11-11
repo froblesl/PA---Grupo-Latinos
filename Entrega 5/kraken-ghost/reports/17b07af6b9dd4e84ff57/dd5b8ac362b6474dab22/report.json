@@ -1,0 +1,77 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "my-feature;my-scenario-2",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "My scenario 2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 789000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I wait for a signal containing \"hi\"",
+            "match": {
+              "location": "..\\..\\..\\..\\..\\..\\..\\node_modules\\kraken-node\\lib\\steps\\both.js:97"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10106000000,
+              "error_message": "Error: ERROR: Signal timeout, did not receive signal: hi\n    at WebClient.SignalingClient.waitForSignalOrTimeout (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\SignalingClient.js:80:19)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I wait",
+            "match": {
+              "location": "..\\..\\..\\..\\..\\..\\..\\node_modules\\kraken-node\\lib\\steps\\both.js:61"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 4000000,
+              "error_message": "Error: no current window handle registered\n    at DevToolsDriver.getPageHandle (C:\\Users\\geral\\node_modules\\devtools\\build\\devtoolsdriver.js:192:19)\n    at DevToolsDriver.checkPendingNavigations (C:\\Users\\geral\\node_modules\\devtools\\build\\devtoolsdriver.js:205:25)\n    at Browser.wrappedCommand (C:\\Users\\geral\\node_modules\\devtools\\build\\devtoolsdriver.js:123:24)\n    at Browser.wrapCommandFn (C:\\Users\\geral\\node_modules\\@wdio\\utils\\build\\shim.js:136:38)\n    at Browser.<anonymous> (C:\\Users\\geral\\node_modules\\@wdio\\utils\\build\\shim.js:275:24)\n    at WebClient.<anonymous> (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:109:59)\n    at step (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:59:23)\n    at Object.next (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:40:53)\n    at C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:34:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:30:12)\n    at WebClient.stop (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:104:16)\n    at WebClient.<anonymous> (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\Client.js:109:51)\n    at step (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\Client.js:67:23)\n    at Object.next (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\Client.js:48:53)\n    at fulfilled (C:\\Users\\geral\\node_modules\\kraken-node\\lib\\clients\\Client.js:39:58)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user2",
+            "line": 8
+          },
+          {
+            "name": "@web",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "my-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "My feature",
+    "tags": [],
+    "uri": "features\\my_first.feature"
+  }
+]
