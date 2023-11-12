@@ -7,8 +7,6 @@
 |Diego Martin      |da.martin2@uniandes.edu.co |
 |Geraldine Gómez   | |
 
-## Cypress
-
 ## Kraken
 
 ### Pasos de instalación y ejecución de pruebas
@@ -39,3 +37,7 @@
 
 #### Ejecución 
 Ejecutar Kraken a través del comando: npx kraken-node run.
+
+## Cypress
+
+### Pasos de instalación y ejecución de pruebas
