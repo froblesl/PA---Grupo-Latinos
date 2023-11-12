@@ -9,4 +9,6 @@
 
 ## Cypress
 
+### Pasos de instalación
+
 ## Kraken
