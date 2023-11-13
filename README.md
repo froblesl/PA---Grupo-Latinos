@@ -45,10 +45,6 @@ Ejecutar Kraken a través del comando: npx kraken-node run.
 #### Prerequisitos
 1. Usar la versión 18.18.0 de Node.Js
 2. Usar la versión 5.69.0 de Ghost
-3. En las propiedades de Android Studio tener instalado:
-	a. Android SDK Platform-Tools
-	b. Android SDK Build-Tools
-	c. Android SDK Tools
 
 #### Instalación y set-up de Cypress
 1. Ir a la carpeta de trabajo (GHOST)
