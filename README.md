@@ -41,17 +41,3 @@ Ejecutar Kraken a través del comando: npx kraken-node run.
 ## Cypress
 
 ### Pasos de instalación y ejecución de pruebas
-
-#### Prerequisitos
-1. Usar la versión 18.18.0 de Node.Js
-2. Usar la versión 5.69.0 de Ghost
-
-#### Instalación y set-up de Cypress
-1. Ir a la carpeta de trabajo (GHOST)
-2. Instalar Kraken en global: npm install kraken-node -g
-4. Instalar Kraken en local: npm install kraken-node
-5. Instalar Appium en global: npm install -g appium
-6. Puede verificar que todo haya quedado instalado usando el comando kraken-node doctor
-
-#### Ejecución 
-Ejecutar Cypress a través del comando: cypress run --headless.
