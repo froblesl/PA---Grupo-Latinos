@@ -41,3 +41,20 @@ Ejecutar Kraken a través del comando: npx kraken-node run.
 ## Cypress
 
 ### Pasos de instalación y ejecución de pruebas
+
+#### Prerequisitos
+1. Usar la versión 18.18.0 de Node.Js
+2. Usar la versión 5.69.0 de Ghost
+
+#### Instalación y set-up de Cypress
+1. Instalar Cypress en global: npm install -g cypress
+2. En la carpeta local del proyecto Ghost ir a el directorio cypress\e2e y copiar los siguientes archivos de las pruebas que se encuentran en el directorio Cypress\cypress\e2e de este repositorio: dashboard.cy.js, draft posts.cy.js, explore.cy.js, members.cy.js, pages.cy.js, posts.cy.js, published.cy.js, scheduled posts.cy.js, tags.cy.js y viewsite.cy.js.
+3. Iniciar Cypress en modo GUI para la configuración inicial a través del comando: cypress open.
+4. Hacer click en Add project y seleccionar la carpeta del directorio del proyecto donde está Ghost.
+5. En la ventana Welcome to Cypress, seleccionar E2E testing.
+6. Seleccione el navegador Chrome y haga click Start E2E Testing in Chrome.
+7. Aparecerá una ventana como la siguiente:
+   ![image](https://github.com/froblesl/PA---Grupo-Latinos/assets/124463884/cb90e4e9-ad35-48ad-b9e4-42858ec9e615)
+
+#### Ejecución 
+1. Ejecutar una a una cada una de las pruebas especificadas en los archivos como aparece en la imagen anterior.
