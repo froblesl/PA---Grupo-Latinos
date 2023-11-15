@@ -38,6 +38,10 @@
 #### Ejecución 
 Ejecutar Kraken a través del comando: npx kraken-node run.
 
+#### Aclaraciones importantes
+La ejecución de los features de forma secuencial no fue posible configurarla en diferentes archivos, así que para validar la correcta ejecución de cada uno de los escenarios se debe comentarear el código de cada escenario e ir uno a uno ya que el al intentar ejecutarlos todos de una vez debido a la capacidad de los equipos o la infraestructura disponible generará problemas de timeout o bloqueará la máquina.
+
+Se solicita de manera respetuosa a los tutores realizar esta acción para ejecutar los escenarios. 
 ## Cypress
 
 ### Pasos de instalación y ejecución de pruebas
