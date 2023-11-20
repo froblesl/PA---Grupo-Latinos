@@ -7,6 +7,17 @@
 |Francisco Robles  |f.roblesl@uniandes.edu.co|
 |Geraldine Gómez   |gs.gomezm1@uniandes.edu.co|
 
+## Ghost
+Las versiones de Ghost utilizadas para las pruebas fueron las siguientes:
+
+### Pruebas E2E
+Ghost v5.72.0
+
+### Pruebas VRT
+* Ghost v5.72.0
+* Ghost v4.44.0
+
+
 ## Kraken
 
 ### Pasos de instalación y ejecución de pruebas
@@ -42,6 +53,11 @@ Ejecutar Kraken a través del comando: npx kraken-node run.
 La ejecución de los features de forma secuencial no fue posible configurarla en diferentes archivos, así que para validar la correcta ejecución de cada uno de los escenarios se debe comentarear el código de cada escenario e ir uno a uno ya que el al intentar ejecutarlos todos de una vez debido a la capacidad de los equipos o la infraestructura disponible generará problemas de timeout o bloqueará la máquina.
 
 Se solicita de manera respetuosa a los tutores realizar esta acción para ejecutar los escenarios. 
+
+#### Capturas de pantalla VTR
+
+Se adiciona la captura de pantalla para cada uno de los pasos utilizando la funcion AfterStep, se creo la variable VERSION en el archivo de configuración para indicar la versión de Ghost que se esta probando y que el nombre de las capturas de pantalla quedaron con la versión.
+
 ## Cypress
 
 ### Pasos de instalación y ejecución de pruebas
@@ -62,3 +78,7 @@ Se solicita de manera respetuosa a los tutores realizar esta acción para ejecut
 
 #### Ejecución 
 1. Ejecutar una a una cada una de las pruebas especificadas en los archivos como aparece en la imagen anterior.
+
+## Resemble JS
+1. Dirigirse a la carpeta de vtr-resemblejs
+2. Ejecutar el comando npm i
