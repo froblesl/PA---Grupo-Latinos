@@ -80,13 +80,13 @@ Se adiciona la captura de pantalla para cada uno de los pasos utilizando la func
 #### Ejecución 
 1. Ejecutar una a una cada una de las pruebas especificadas en los archivos como aparece en la imagen anterior.
 
-## VRT
+# VRT
 
-A continuación, se describe la configuración de las herramientas utilizadas para las pruebas E2E de la aplicación.
+A continuación, se describe la configuración de las herramientas utilizadas para las pruebas VTR de la aplicación.
 
 ## Resemble JS
 Si desea generar nuevamente el reporte de la herramienta debe realizar los siguientes pasos:
-1. Dirigirse a la carpeta: `vtr-resemblejs`
+1. Dirigirse a la carpeta del proyecto: `vtr-resemblejs`
 2. Instalar las dependencias a través del comando: `npm i`
 3. Generar el reporte ejecutando el comando `node index.js`
 
