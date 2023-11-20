@@ -14,9 +14,11 @@ Las versiones de Ghost utilizadas para las pruebas fueron las siguientes:
 Ghost v5.72.0
 
 ### Pruebas VRT
-* Ghost v5.72.0
-* Ghost v4.44.0
-
+* Ghost v5.72.0: se debe instalar de forma local
+* Ghost v4.44.0: utilizar la imagen de docker para esta versión.
+  - Debe contar con docker instalado previamente
+  - Abrir una consola y ejecutar el siguiente comando: docker pull ghost:4.44
+  - Correr la imagen y cambiar el puerto por el defecto a partir del siguiente comando: docker run -p 2396:2368 ghost:4.44
 
 ## Kraken
 
