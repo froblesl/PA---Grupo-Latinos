@@ -1,0 +1,7 @@
+{
+    "EMAIL": "grupo2@uniandes.edu.co",
+    "PASSWORD": "Grupo2PA2023!",
+    "URL_GHOST_ADMIN": "http://localhost:2396/ghost/#/signin",
+    "URL_GHOST": "http://localhost:2396/",
+    "VERSION": "4.44.0"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "default",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Dashboard - Members",
+      "url": "file:///C:/Users/diego.martin/OneDrive%20-%20Universidad%20de%20los%20andes/MISO/MISW-4103/PA---Grupo-Latinos/backstop_data/bitmaps_test/dashboard-4-44-0-1-1-1.png",
+      "referenceUrl": "file:///C:/Users/diego.martin/OneDrive%20-%20Universidad%20de%20los%20andes/MISO/MISW-4103/PA---Grupo-Latinos/backstop_data/bitmaps_reference/backstop_default_Dashboard_-_Members_0_document_0_default.png",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 1,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 5,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Dashboard - All Posts",
+      "url": "file:///C:/Users/diego.martin/OneDrive%20-%20Universidad%20de%20los%20andes/MISO/MISW-4103/PA---Grupo-Latinos/backstop_data/bitmaps_test/dashboard-4-44-0-1-2-2.png",
+      "referenceUrl": "file:///C:/Users/diego.martin/OneDrive%20-%20Universidad%20de%20los%20andes/MISO/MISW-4103/PA---Grupo-Latinos/backstop_data/bitmaps_reference/backstop_default_Dashboard_-_All_Posts_0_document_0_default.png",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 1,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 5,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
