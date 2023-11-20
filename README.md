@@ -88,6 +88,8 @@ A continuación, se especifica la configuración y la ubicación de los reportes
 
 ### Reporte
 
+https://github.com/froblesl/PA---Grupo-Latinos/blob/main/vtr-resemblejs/results/2023-11-20T02.53.17.481Z/report.html
+
 ### Configuración
 Si desea generar nuevamente el reporte de la herramienta debe realizar los siguientes pasos:
 1. Dirigirse a la carpeta del proyecto: `vtr-resemblejs`
@@ -99,6 +101,7 @@ Si desea generar nuevamente el reporte de la herramienta debe realizar los sigui
 ## Backstop JS
 
 ### Reporte
+https://github.com/froblesl/PA---Grupo-Latinos/blob/main/backstop_data/html_report/index.html. 
 
 ### Configuración
 Si desea generar nuevamente el reporte de la herramienta debe realizar los siguientes pasos:
