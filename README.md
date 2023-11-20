@@ -89,3 +89,10 @@ Si desea generar nuevamente el reporte de la herramienta debe realizar los sigui
 1. Dirigirse a la carpeta: `vtr-resemblejs`
 2. Instalar las dependencias a través del comando: `npm i`
 3. Generar el reporte ejecutando el comando `node index.js`
+
+## Backstop JS
+Si desea generar nuevamente el reporte de la herramienta debe realizar los siguientes pasos:
+1. Dirigirse a la carpeta del proyecto para instalar las dependencias utilizando el comando: `npm install -g backstop`.
+2. Inicializar la herramienta Backstop JS dentro del proyecto ejecutando `backstop init`.
+3. Generar el reporte ejecutando el comando `backstop test`.
+4. Abrir el reporte HTML que se encuentra en la ruta https://github.com/froblesl/PA---Grupo-Latinos/blob/develop/backstop_data/html_report/index.html. 
