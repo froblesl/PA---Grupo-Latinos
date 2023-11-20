@@ -7,6 +7,18 @@
 |Francisco Robles  |f.roblesl@uniandes.edu.co|
 |Geraldine Gómez   |gs.gomezm1@uniandes.edu.co|
 
+## Ghost
+Las versiones de Ghost utilizadas para efectuar las pruebas fueron las siguientes:
+* Ghost v5.72.0: se recomienda instalarla de forma local.
+* Ghost v4.44.0: se recomienda utilizar la imagen de docker de esta versión, a través de los pasos descritos a continuación:
+  - Debe contar con docker instalado previamente
+  - Abrir una consola y ejecutar el siguiente comando: `docker pull ghost:4.44`
+  - Correr la imagen y cambiar el puerto de defecto a partir del siguiente comando: `docker run -p 2396:2368 ghost:4.44`
+
+## E2E
+
+A continuación, se describe la configuración de las herramientas utilizadas para las pruebas E2E de la aplicación.
+
 ## Kraken
 
 ### Pasos de instalación y ejecución de pruebas
@@ -38,6 +50,15 @@
 #### Ejecución 
 Ejecutar Kraken a través del comando: npx kraken-node run.
 
+#### Aclaraciones importantes
+La ejecución de los features de forma secuencial no fue posible configurarla en diferentes archivos, así que para validar la correcta ejecución de cada uno de los escenarios se debe comentarear el código de cada escenario e ir uno a uno ya que el al intentar ejecutarlos todos de una vez debido a la capacidad de los equipos o la infraestructura disponible generará problemas de timeout o bloqueará la máquina.
+
+Se solicita de manera respetuosa a los tutores realizar esta acción para ejecutar los escenarios. 
+
+#### Capturas de pantalla VTR
+
+Se adiciona la captura de pantalla para cada uno de los pasos utilizando la funcion AfterStep, se creo la variable VERSION en el archivo de configuración para indicar la versión de Ghost que se esta probando y que el nombre de las capturas de pantalla quedaron con la versión.
+
 ## Cypress
 
 ### Pasos de instalación y ejecución de pruebas
@@ -58,3 +79,13 @@ Ejecutar Kraken a través del comando: npx kraken-node run.
 
 #### Ejecución 
 1. Ejecutar una a una cada una de las pruebas especificadas en los archivos como aparece en la imagen anterior.
+
+## VRT
+
+A continuación, se describe la configuración de las herramientas utilizadas para las pruebas E2E de la aplicación.
+
+## Resemble JS
+Si desea generar nuevamente el reporte de la herramienta debe realizar los siguientes pasos:
+1. Dirigirse a la carpeta: `vtr-resemblejs`
+2. Instalar las dependencias a través del comando: `npm i`
+3. Generar el reporte ejecutando el comando `node index.js`
