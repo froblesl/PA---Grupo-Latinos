@@ -7,7 +7,7 @@
 |Francisco Robles  |f.roblesl@uniandes.edu.co|
 |Geraldine Gómez   |gs.gomezm1@uniandes.edu.co|
 
-## Ghost
+# Ghost
 Las versiones de Ghost utilizadas para efectuar las pruebas fueron las siguientes:
 * Ghost v5.72.0: se recomienda instalarla de forma local.
 * Ghost v4.44.0: se recomienda utilizar la imagen de docker de esta versión, a través de los pasos descritos a continuación:
@@ -15,7 +15,7 @@ Las versiones de Ghost utilizadas para efectuar las pruebas fueron las siguiente
   - Abrir una consola y ejecutar el siguiente comando: `docker pull ghost:4.44`
   - Correr la imagen y cambiar el puerto de defecto a partir del siguiente comando: `docker run -p 2396:2368 ghost:4.44`
 
-## E2E
+# E2E
 
 A continuación, se describe la configuración de las herramientas utilizadas para las pruebas E2E de la aplicación.
 
@@ -82,15 +82,25 @@ Se adiciona la captura de pantalla para cada uno de los pasos utilizando la func
 
 # VRT
 
-A continuación, se describe la configuración de las herramientas utilizadas para las pruebas VTR de la aplicación.
+A continuación, se especifica la configuración y la ubicación de los reportes generados por las herramientas utilizadas para las pruebas VTR de la aplicación.
 
 ## Resemble JS
+
+### Reporte
+
+### Configuración
 Si desea generar nuevamente el reporte de la herramienta debe realizar los siguientes pasos:
 1. Dirigirse a la carpeta del proyecto: `vtr-resemblejs`
 2. Instalar las dependencias a través del comando: `npm i`
 3. Generar el reporte ejecutando el comando `node index.js`
+4. Abrir el reporte HTML que se encontrará en la carpeta `results/fecha_ejecucio/index.html`
+
 
 ## Backstop JS
+
+### Reporte
+
+### Configuración
 Si desea generar nuevamente el reporte de la herramienta debe realizar los siguientes pasos:
 1. Dirigirse a la carpeta del proyecto para instalar las dependencias utilizando el comando: `npm install -g backstop`.
 2. Inicializar la herramienta Backstop JS dentro del proyecto ejecutando `backstop init`.
