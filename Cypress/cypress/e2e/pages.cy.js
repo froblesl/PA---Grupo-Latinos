@@ -1,36 +1,70 @@
 describe('Testing funcionalidad pages', () => {
-    it('Ingresar credenciales y hacer clic en el botón de inicio de sesión', () => {
-      cy.visit('http://localhost:2368/ghost/#/signin');
-  
-      // Esperar a que la página cargue completamente (reemplaza con un tiempo adecuado)
-      cy.wait(7000);
-  
-      // Rellenar el formulario de inicio de sesión
-      cy.get('input[name="identification"]').type('camilopenaflorez@hotmail.com');
-      cy.get('input[name="password"]').type('Camilo2307');
-  
-      // Hacer clic en el botón de inicio de sesión
-      cy.get('button:contains("Sign in")').click(); 
-      cy.wait(7000);
-      cy.get('a[href="#/pages/"]').eq(0).click();
+
+
+  beforeEach(()=>{
+    cy.visit('http://localhost:2368/ghost/#/signin');
+    cy.get('input[name="identification"]').clear();
+    cy.get('input[name="identification"]').type('camilopenaflorez@hotmail.com');
+    cy.get('input[name="password"]').clear();
+    cy.get('input[name="password"]').type('Camilo2307');
+    cy.get('button[type="submit"]').click();
+    cy.wait(2000);
+    cy.screenshot('loginPA')
+    cy.wait(2000);
+
+  })
+  it('Crear una pagina', () => {
+      cy.visit('http://localhost:2368/ghost/#/pages');
+      cy.wait(2000);
+      cy.screenshot('PageC1')
       cy.get('a[href="#/editor/page/"]').eq(0).click();
-      cy.get('textarea[tabindex="1"]').type('Jose');
-      cy.get('p[data-koenig-dnd-droppable="true"]').type('Jose');
+      cy.wait(2000);
+      cy.screenshot('PageC2')
+      cy.get('textarea[tabindex="1"]').type('Algun dia');
+      cy.wait(2000);
+      cy.screenshot('PageC3')
+      cy.get('p[data-koenig-dnd-droppable="true"]').type('Algun dia');
+      cy.wait(2000);
+      cy.screenshot('PageC4')
       cy.get('[data-test-button="publish-flow"]').click();
+      cy.wait(2000);
+      cy.screenshot('PageC5')
       cy.get('[data-test-button="continue"]').click();
+      cy.wait(2000);
+      cy.screenshot('PageC6')
       cy.get('[data-test-button="confirm-publish"]').click();
+      cy.wait(2000);
+      cy.screenshot('PageC7')
       cy.get('[data-test-button="close-publish-flow"]').click();
-      cy.get('a[href="#/pages/"]').eq(0).click();
-      cy.get('a[href="#/editor/page/65512116f53a7563a37c4e65/"]').eq(0).click();
+      cy.wait(2000);
+      cy.screenshot('PageC8')
+
+
+  })
+
+  it('Despublicar una pagina', () => {
+      cy.visit('http://localhost:2368/ghost/#/pages');
+      cy.wait(2000);
+      cy.screenshot('PageD1')
+      cy.get('a[href="#/editor/page/655a9632a2ea0066f2a84834/"]').eq(0).click();
+      cy.wait(2000);
+      cy.screenshot('PageD2')
+      
       cy.get('[data-test-button="update-flow"]').click();
+      cy.wait(2000);
+      cy.screenshot('PageD3')
       cy.get('[data-test-button="revert-to-draft"]').click();
-      cy.get('[title="Close"]').click();
+      cy.wait(2000);
+      cy.screenshot('PageD4')
+
 
 
 
       
-    });
+    })
 
 
+  })
 
-  });
+
+  
