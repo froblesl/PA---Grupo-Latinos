@@ -1,0 +1,30 @@
+{
+    "url": "ghost", 
+    "path_screenshoots": "../kraken-ghost/reports/vrt/screenshots/",
+    "scenarios": { "como_usuario_quiero_crear_un_nuevo_member" : 24,
+    "como_usuario_quiero_editar_un_member": 40,
+    "como_usuario_quiero_eliminar_un_member": 32,
+    "como_usuario_quiero_crear_un_nuevo_post": 22,
+    "como_usuario_quiero_editar_un_post": 40,
+    "como_usuario_quiero_eliminar_un_post": 34,
+    "como_usuario_quiero_crear_un_borrador_de_post": 18,
+    "como_usuario_quiero_eliminar_un_post_antes_de_publicarse": 22
+    },
+    "before_version": "4.44.0",
+    "after_version": "5.72.0",
+    "options":{
+        "output": {
+            "errorColor": {
+                "red": 255,
+                "green": 0,
+                "blue": 255
+            },
+            "errorType": "movement",
+            "largeImageThreshold": 1200,
+            "useCrossOrigin": false,
+            "outputDiff": true
+        },
+        "scaleToSameSize": true,
+        "ignore": "antialiasing"
+    }
+}
