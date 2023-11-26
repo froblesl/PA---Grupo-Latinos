@@ -2,5 +2,9 @@
   "dependencies": {
     "playwright": "^1.40.0",
     "resemblejs": "^5.0.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "cypress-iframe": "^1.0.1"
   }
 }
