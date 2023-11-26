@@ -123,4 +123,6 @@ Los escenarios de Cypress generados en la entrega de pruebas E2E fueron modifica
 2. Datos Dinámicos/Aleatorios: Para la generacióm de este tipo de datos "online" se utilizó la API Faker.js con los correspondietes tipos de datos según el escenario a probar.
 3. Escenarios Aleatorios: En este caso se utilizó Mockaroo para crear datos "dependientes" el uno del otro y que los diferentes pasos o casos fueran coherentes dentro de las pruebas.
 
+Por otra parte, la descripción más detallada de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas se encuentra en la Wiki del repositorio en el link a continuación: 
+
 ## Kraken
