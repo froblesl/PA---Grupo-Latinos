@@ -106,3 +106,7 @@ Si desea generar nuevamente el reporte de la herramienta debe realizar los sigui
 2. Inicializar la herramienta Backstop JS dentro del proyecto ejecutando `backstop init`.
 3. Generar el reporte ejecutando el comando `backstop test`.
 4. Abrir el reporte HTML que se encuentra en la ruta https://github.com/froblesl/PA---Grupo-Latinos/blob/develop/backstop_data/html_report/index.html. 
+
+## Video Explicativo
+
+En el Wiki https://github.com/froblesl/PA---Grupo-Latinos/wiki/Semana-6#video-explicativo se encuentra el link del video explicativo.
