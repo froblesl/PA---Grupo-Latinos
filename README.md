@@ -110,3 +110,17 @@ Si desea generar nuevamente el reporte de la herramienta debe realizar los sigui
 ## Video Explicativo
 
 En el Wiki https://github.com/froblesl/PA---Grupo-Latinos/wiki/Semana-6#video-explicativo se encuentra el link del video explicativo.
+
+# Estrategias de Generación de Datos
+
+A continuación, se especifica la configuración y la ubicación de los reportes generados por las herramientas utilizadas para las pruebas VTR de la aplicación.
+
+## Cypress
+
+### Instrucciones
+Los escenarios de Cypress generados en la entrega de pruebas E2E fueron modificados de tal forma que, aquellos que requirieran el ingreso de datos, fueran generados a partir de las 3 estrategias de generación de datos:
+1. Datos A Priori: Para la generación de datos A Priori se utilizó Mockaroo creando los esquemas con los tipos de datos a generar y las correspondientes API's invocadas desde casa uno de los scripts de pruebas.
+2. Datos Dinámicos/Aleatorios: Para la generacióm de este tipo de datos "online" se utilizó la API Faker.js con los correspondietes tipos de datos según el escenario a probar.
+3. Escenarios Aleatorios: En este caso se utilizó Mockaroo para crear datos "dependientes" el uno del otro y que los diferentes pasos o casos fueran coherentes dentro de las pruebas.
+
+## Kraken
