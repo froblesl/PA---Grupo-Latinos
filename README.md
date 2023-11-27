@@ -110,3 +110,28 @@ Si desea generar nuevamente el reporte de la herramienta debe realizar los sigui
 ## Video Explicativo
 
 En el Wiki https://github.com/froblesl/PA---Grupo-Latinos/wiki/Semana-6#video-explicativo se encuentra el link del video explicativo.
+
+# Estrategias de generacion de datos
+
+A continuación, se especifica la configuración y la ubicación de los reportes generados por las herramientas utilizadas para las pruebas VTR de la aplicación.
+
+## Cypress
+
+### Instrucciones
+Los escenarios de Cypress generados en la entrega de pruebas E2E fueron modificados de tal forma que, aquellos que requirieran el ingreso de datos, fueran generados a partir de las 3 estrategias de generación de datos:
+1. Datos A Priori: Para la generación de datos A Priori se utilizó Mockaroo creando los esquemas con los tipos de datos a generar y las correspondientes API's invocadas desde casa uno de los scripts de pruebas.
+2. Datos Dinámicos/Aleatorios: Para la generacióm de este tipo de datos "online" se utilizó la API Faker.js con los correspondietes tipos de datos según el escenario a probar.
+3. Escenarios Aleatorios: En este caso se utilizó Mockaroo para crear datos "dependientes" el uno del otro y que los diferentes pasos o casos fueran coherentes dentro de las pruebas.
+
+### Preparación de ambiente
+
+1. Para la utilización de Mockaroo como herramienta de generación de datos, los scripts de las pruebas invocan directamente las API's de generación por cada uno de los escenarios, luego no se requiere instalar nada para la ejecución.
+2. Para el caso de Faker.js, ejecutar el comando `npm install @faker-js/faker --save-dev` las dependencias de Faker.
+
+En cualquiera de los dos cosas se requiere Cypress instalado. La versión de la aplicación bajo pruebas es Ghost 5.71.0.
+
+Por otra parte, la descripción más detallada de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas se encuentra en la Wiki del repositorio.
+
+## Kraken
+
+Para la estrategia de generación de datos a priori, en kraken se crearon `Scenarios Outline` con `Examples`. Para el sistema operativo Windows, la herramienta solamente ejecuta la primera entrada de la tabla de examples, por lo tanto, es necesario descomentar la entrada de la tabla que se quiere validar y comentar el restante para que funcione correctamente, ya que produce un error json invalid. En mac o linux se pueden descomentar todas las entradas de los examples y funcionará de la forma esperada.
