@@ -1,0 +1,9 @@
+
+{
+  "members": [
+    { "name": "John Doe", "email": "john@example.com" },
+    { "name": "Jane Smith", "email": "jane@example.com" },
+    { "name": "Diego Miso", "email": "diegomiso@example.com" },
+    { "name": "Francisco Robles", "email": "FranciscoRobles@example.com" }
+  ]
+}
