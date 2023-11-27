@@ -113,3 +113,9 @@ Si desea generar nuevamente el reporte de la herramienta debe realizar los sigui
 ## Video Explicativo
 
 En el Wiki https://github.com/froblesl/PA---Grupo-Latinos/wiki/Semana-6#video-explicativo se encuentra el link del video explicativo.
+
+# Estrategias de generacion de datos
+
+## Kraken
+
+Para kraken se crearon scenarios outline con examples. Es necesario aclarar que en Windows se debe descomentarear el escenario de la tabla de examples que se quiere validar y comentarear el restante para que funcione correctamente. En mac o linux se pueden descomentarear todos los examples y funcionará de la forma esperada
