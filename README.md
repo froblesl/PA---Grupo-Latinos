@@ -123,6 +123,15 @@ Los escenarios de Cypress generados en la entrega de pruebas E2E fueron modifica
 2. Datos Dinámicos/Aleatorios: Para la generacióm de este tipo de datos "online" se utilizó la API Faker.js con los correspondietes tipos de datos según el escenario a probar.
 3. Escenarios Aleatorios: En este caso se utilizó Mockaroo para crear datos "dependientes" el uno del otro y que los diferentes pasos o casos fueran coherentes dentro de las pruebas.
 
+### Preparación de ambiente
+
+1. Para la utilización de Mockaroo como herramienta de generación de datos, los scripts de las pruebas invocan directamente las API's de generación por cada uno de los escenarios, luego no se requiere instalar nada para la ejecución.
+2. Para el caso de Faker.js, ejecutar el comando `npm install @faker-js/faker --save-dev` las dependencias de Faker.
+
+En cualquiera de los dos cosas se requiere Cypress instalado. La versión de la aplicación bajo pruebas es Ghost 5.71.0.
+
 Por otra parte, la descripción más detallada de las estrategias usadas y cómo se integran estas estrategias en los escenarios de pruebas se encuentra en la Wiki del repositorio en el link a continuación: 
 
 ## Kraken
+
+<<Aquí Kraken>>
