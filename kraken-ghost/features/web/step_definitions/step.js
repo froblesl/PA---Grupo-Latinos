@@ -246,6 +246,15 @@ Then('I click Schedule for later {kraken-string}', async function (test_version)
     return await element.click();
 })
 
+Then('I enter the date and time to Schedule for later {kraken-string} {kraken-string}', async function (date, time) {
+    let dateElement = await this.driver.$('input[placeholder="YYYY-MM-DD"]');
+    await dateElement.setValue('');
+    await dateElement.setValue(date);
+    let timeElement = await this.driver.$('div.gh-date-time-picker-time > input');
+    await timeElement.setValue('');
+    return await timeElement.setValue(time);
+})
+
 // Seven scenary
 When('I click on Explore', async function () {
     let element = await this.driver.$(`li.relative > a[data-test-nav="explore"]`);
