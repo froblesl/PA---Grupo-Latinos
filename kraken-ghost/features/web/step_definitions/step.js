@@ -396,6 +396,69 @@ Then('I enter member name on search box {kraken-string}', async function (name) 
     return await element.setValue(name);
 })
 
+// Profile
+When('I click on User avatar', async function () {
+    let element = await this.driver.$('div.pe-all');
+    return await element.click();
+    
+});
+
+When('I click on Your profile', async function () {
+    let element = await this.driver.$('a[data-test-nav="user-profile"]');
+    return await element.click();
+    
+});
+
+When('I enter user Full name {kraken-string}', async function (fullname) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(1) > div > input');
+    return await element.setValue(fullname);
+});
+
+When('I enter user Location {kraken-string}', async function (location) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div.flex.flex-col.justify-between.gap-10 > div.relative.flex-col.gap-6.rounded-lg.transition-all.flex.is-not-editing.group\\/setting-group.undefined.border-grey-300.dark\\:border-grey-800.hover\\:border-grey-500 > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(1) > div > input');
+    return await element.setValue(location);
+});
+
+When('I enter user Email {kraken-string}', async function (email) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(2) > div > input');
+    return await element.setValue(email);
+});
+
+When('I enter user Website {kraken-string}', async function (website) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div.flex.flex-col.justify-between.gap-10 > div.relative.flex-col.gap-6.rounded-lg.transition-all.flex.is-not-editing.group\\/setting-group.undefined.border-grey-300.dark\\:border-grey-800.hover\\:border-grey-500 > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(2) > div > input');
+    return await element.setValue(website);
+});
+
+When('I enter user Slug {kraken-string}', async function (slug) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(3) > div > input');
+    return await element.setValue(slug);
+    
+});
+
+When('I enter user Facebook profile {kraken-string}', async function (facebook) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div.flex.flex-col.justify-between.gap-10 > div.relative.flex-col.gap-6.rounded-lg.transition-all.flex.is-not-editing.group\\/setting-group.undefined.border-grey-300.dark\\:border-grey-800.hover\\:border-grey-500 > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(3) > div > input');
+    return await element.setValue(facebook);
+    
+});
+
+When('I enter user X profile {kraken-string}', async function (x) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div.flex.flex-col.justify-between.gap-10 > div.relative.flex-col.gap-6.rounded-lg.transition-all.flex.is-not-editing.group\\/setting-group.undefined.border-grey-300.dark\\:border-grey-800.hover\\:border-grey-500 > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(4) > div > input');
+    return await element.setValue(x);
+    
+});
+
+When('I enter user Bio {kraken-string}', async function (bio) {
+    let element = await this.driver.$('#modal-backdrop > section > div.p-8.py-0 > div > div.false.mt-10.grid.grid-cols-1.gap-x-12.gap-y-20.md\\:grid-cols-2 > div.flex.flex-col.justify-between.gap-10 > div.relative.flex-col.gap-6.rounded-lg.transition-all.flex.is-not-editing.group\\/setting-group.undefined.border-grey-300.dark\\:border-grey-800.hover\\:border-grey-500 > div.flex.flex-col.gap-x-5.gap-y-7.undefined > div:nth-child(5) > textarea');
+    return await element.setValue(bio);
+    
+});
+
+When('I click on Save and close', async function () {
+    let element = await this.driver.$('#modal-backdrop > section > div.w-100.sticky.bottom-\\[-24px\\].z-\\[297\\].m-0.box-border.p-0 > div.sticky.z-\\[299\\].mb-\\[-24px\\].flex.items-center.justify-between.h-\\[96px\\].bg-white.dark\\:bg-black > div > div.flex.gap-3 > div > button');
+    return await element.click();
+    
+});
+
 // VRT Testing
 function handleDirVRT(testCaseName) {
     if (!fs.existsSync(`./reports/vrt/screenshots/${testCaseName}`)){
