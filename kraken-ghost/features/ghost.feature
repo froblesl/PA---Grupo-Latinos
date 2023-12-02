@@ -757,3 +757,44 @@ Scenario: Como usuario quiero agregar un nuevo Site
   And I wait for 3 seconds
   And I click on Explore
   Then I wait for 3 seconds
+
+@user42 @web
+Scenario Outline: Como usuario quiero agregar mis datos personales al perfil
+  Given I navigate to page "<URL_GHOST_ADMIN>"
+  When I enter email "<EMAIL>"
+  And I wait for 2 seconds
+  And I enter password "<PASSWORD>"
+  And I wait for 2 seconds
+  And I click next
+  And I wait for 3 seconds
+  And I click on User avatar
+  And I wait for 3 seconds
+  And I click on Your profile
+  And I wait for 3 seconds
+  And I enter user Full name "<fullname>"
+  And I wait for 2 seconds
+  And I enter user Location "<location>"
+  And I wait for 2 seconds
+  And I enter user Email "<email>"
+  And I wait for 2 seconds
+  And I enter user Website "<website>"
+  And I wait for 2 seconds
+  And I enter user Slug "<slug>"
+  And I wait for 2 seconds
+  And I enter user Facebook profile "<facebook>"
+  And I wait for 2 seconds
+  And I enter user X profile "<x>"
+  And I wait for 2 seconds
+  And I enter user Bio "<bio>"
+  And I wait for 2 seconds
+  Then I click on Save and close
+Examples:
+  | fullname | location | email |  website | slug | facebook | x | bio |
+  # | john doe | London |  | https://www.johndoe.co.uk | johnosde | https://facebook.com/johnosde | https://twitter.com/johnosde | Descubre nuevas perspectivas y aventuras mientras exploras tu mundo. Desde consejos de viaje hasta historias inspiradoras |
+  # | &.gU[WPc6y%K$h+)(dS*d57v2ej*$]?8E$_r96wmCj*L52eQ:.@m;x2/}fvy!.5h=j2WGQJZKmfSWbN.*&D}&r%0b$ADny)yXV}j{_S7!;nni}[G(%..!Jh{aaPpV5w_.7u,wX8(=zu&EFYdHXi?;E=t7C5im;9iy,KZ_HMp(_*LEeJymw0q7eQcVk3.=_Z4 | aventuras-inolvidables-descubre-mundos-historias-consejos-exploracion | d | https://facebook.com/n&*gh8vVv:jS[,t*7*va:j{p[k%M2tLgmA=H9u0wufdKM[G{75yJ@#K_0zeT:Q5w2w{W#ctB.B,(/vF5,gEX3WR+u2-VdtdL:yg0?h&4gj5wpm_.]v*[)60NujRVnXM6.KB]:ff9=cc,5]n4NR+hxu!UKbc4YH(iMJ{=aLHF6=!0:hf4qZWxD.)(G7+#qM0=_QV0PuuX!m,j@c,{;BWB*Wr#ABE.qvd%U3aBmji&$Ed(%Rk*]af6qq*?.v-k{iWhznTndym:uHu_;ViJwpkJn+_v}dmDng=:ipPp1?V*eFhpPZaa6y4$MG?_Md{nYKibnf=Q+%7:B+!#!FKHjL8PTm%qS*N+Tvi(Bd*1XFk7d#;wH%mb;hKRaDer-(*,KD1V9ZpK%:MJ]b+Gg@ZMeS=mUg+J.3qEfwNVK;?P1N#HJ$6Kx7=:Tn=&xWtiDHmM*h258TNeVyAxi1N;HzEm&iFv]=u/hPkc23Q;.[N:vq]tjZL.PUVyw%&P! | https://twitter.com/&.gU[WPc6y%K$h+)(dS*d57v2ej*$]?8E$_r96wmCj*L52eQ:.@m;x2/}fvy!.5h=j2WGQJZKmfSWbN.*&D}&r%0b$ADny)yXV}j{_S7!;nni}[G(%..!Jh{aaPpV5w_.7u,wX8(=zu&EFYdHXi?;E=t7C5im;9iy,KZ_HMp(_*LEeJymw0q7eQcVk3.=_Z4 | https://n&*gh8vVv:jS[,t*7*va:j{p[k%M2tLgmA=H9u0wufdKM[G{75yJ@#K_0zeT:Q5w2w{W#ctB.B,(/vF5,gEX3WR+u2-VdtdL:yg0?h&4gj5wpm_.]v*[)60NujRVnXM6.KB]:ff9=cc,5]n4NR+hxu!UKbc4YH(iMJ{=aLHF6=!0:hf4qZWxD.)(G7+#qM0=_QV0PuuX!m,j@c,{;BWB*Wr#ABE.qvd%U3aBmji&$Ed(%Rk*]af6qq*?.v-k{iWhznTndym:uHu_;ViJwpkJn+_v}dmDng=:ipPp1?V*eFhpPZaa6y4$MG?_Md{nYKibnf=Q+%7:B+!#!FKHjL8PTm%qS*N+Tvi(Bd*1XFk7d#;wH%mb;hKRaDer-(*,KD1V9ZpK%:MJ]b+Gg@ZMeS=mUg+J.3qEfwNVK;?P1N#HJ$6Kx7=:Tn=&xWtiDHmM*h258TNeVyAxi1N;HzEm&iFv]=u/hPkc23Q;.[N:vq]tjZL.PUVyw%&P! | https://twitter.com/n&*gh8vVv:jS[,t*7*va:j{p[k%M2tLgmA=H9u0wufdKM[G{75yJ@#K_0zeT:Q5w2w{W#ctB.B,(/vF5,gEX3WR+u2-VdtdL:yg0?h&4gj5wpm_.]v*[)60NujRVnXM6.KB]:ff9=cc,5]n4NR+hxu!UKbc4YH(iMJ{=aLHF6=!0:hf4qZWxD.)(G7+#qM0=_QV0PuuX!m,j@c,{;BWB*Wr#ABE.qvd%U3aBmji&$Ed(%Rk*]af6qq*?.v-k{iWhznTndym:uHu_;ViJwpkJn+_v}dmDng=:ipPp1?V*eFhpPZaa6y4$MG?_Md{nYKibnf=Q+%7:B+!#!FKHjL8PTm%qS*N+Tvi(Bd*1XFk7d#;wH%mb;hKRaDer-(*,KD1V9ZpK%:MJ]b+Gg@ZMeS=mUg+J.3qEfwNVK;?P1N#HJ$6Kx7=:Tn=&xWtiDHmM*h258TNeVyAxi1N;HzEm&iFv]=u/hPkc23Q;.[N:vq]tjZL.PUVyw%&P! | https://n&*gh8vVv:jS[,t*7*va:j{p[k%M2tLgmA=H9u0wufdKM[G{75yJ@#K_0zeT:Q5w2w{W#ctB.B,(/vF5,gEX3WR+u2-VdtdL:yg0?h&4gj5wpm_.]v*[)60NujRVnXM6.KB]:ff9=cc,5]n4NR+hxu!UKbc4YH(iMJ{=aLHF6=!0:hf4qZWxD.)(G7+#qM0=_QV0PuuX!m,j@c,{;BWB*Wr#ABE.qvd%U3aBmji&$Ed(%Rk*]af6qq*?.v-k{iWhznTndym:uHu_;ViJwpkJn+_v}dmDng=:ipPp1?V*eFhpPZaa6y4$MG?_Md{nYKibnf=Q+%7:B+!#!FKHjL8PTm%qS*N+Tvi(Bd*1XFk7d#;wH%mb;hKRaDer-(*,KD1V9ZpK%:MJ]b+Gg@ZMeS=mUg+J.3qEfwNVK;?P1N#HJ$6Kx7=:Tn=&xWtiDHmM*h258TNeVyAxi1N;HzEm&iFv]=u/hPkc23Q;.[N:vq]tjZL.PUVyw%&P! |
+  # | ' | ' | ' | ' | ' | https://facebook.com/' | https://twitter.com/' | ' |
+  # | select password from user | select * from user | select * from user | select * from user | select * from user | select * from user | select * from user | select * from user |
+  # | s | London | m |  https://grupomiso.com  | grupomiso | https://facebook.com/grupomiso | https://twitter.com/grupomiso | Bio |
+  # | s | London | m |  https://grupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomiso.com  | grupomiso | https://facebook.com/grupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomiso | https://twitter.com/grupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomisogrupomiso | Bio |
+  # | s | London | m |  https://grupomiso.com  | &.gU[WPc6y%K$h+)(dS*d57v2ej*$]?8E$_r96wmCj*L52eQ:.@m;x2/}fvy!.5h=j2WGQJZKmfSWbN.*&D}&r%0b$ADny)yXV}j{_S7!;nni}[G(%..!Jh{aaPpV5w_.7u,wX8(=zu&EFYdHXi?;E=t7C5im;9iy,KZ_HMp(_*LEeJymw0q7eQcVk3.=_Z4 | https://facebook.com/grupomiso | https://twitter.com/grupomiso | Bio |
+  | s | London | m |  https://grupomiso.com  | m | https://facebook.com/grupomiso | https://twitter.com/grupomiso | ' |
