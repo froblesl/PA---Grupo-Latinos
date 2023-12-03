@@ -120,8 +120,8 @@ En el Wiki https://github.com/froblesl/PA---Grupo-Latinos/wiki/Semana-6#video-ex
 
 Para la estrategia de generación de datos a priori, en kraken se crearon `Scenarios Outline` con `Examples`. Para el sistema operativo Windows, la herramienta solamente ejecuta la primera entrada de la tabla de examples, por lo tanto, es necesario descomentar la entrada de la tabla que se quiere validar y comentar el restante para que funcione correctamente, ya que produce un error json invalid. En mac o linux se pueden descomentar todas las entradas de los examples y funcionará de la forma esperada.
 
-# Estrategias segunda iteración
+# Estrategia segunda iteración
 
 ## Kraken
 
-Para la primera semana de la segunda iteración en kraken se crearon `Scenarios Outline` con `Examples`. Para el sistema operativo Windows, la herramienta solamente ejecuta la primera entrada de la tabla de examples, por lo tanto, es necesario descomentar la entrada de la tabla que se quiere validar y comentar el restante para que funcione correctamente, ya que produce un error json invalid. En Mac o Linux se pueden descomentar todas las entradas de los examples y funcionará de la forma esperada.
+Para la primera semana de la segunda iteración, se utilizó kraken para probar la funcionalidad de `Profile`, se crearon `Scenarios Outline` en la herramienta con `Examples` y se utilizó la estrategia de generación de datos a priori. Para el sistema operativo Windows, kraken solamente ejecuta la primera entrada de la tabla de examples, por lo tanto, es necesario descomentar la entrada de la tabla que se quiere validar y comentar el restante para que funcione correctamente, ya que produce un error json invalid. En Mac o Linux se pueden descomentar todas las entradas de los examples y funcionará de la forma esperada.
